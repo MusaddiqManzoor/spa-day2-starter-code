@@ -5,8 +5,7 @@
 
 <body>
 
-    <p th:text="${error}">Password Doesn't match</p>
-    <p th:text="'welcome, '+ ${userName}">Welcome!</p>
+    <p th:text="'welcome, '+ ${user.userName}">Welcome!</p>
     <a th:href="@{../}">Service Selection</a>
 
 </body>

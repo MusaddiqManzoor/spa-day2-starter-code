@@ -10,15 +10,16 @@
     <p th:text="${errors}">Password Doesn't match</p>
 
 
-    <form method="post">
+    <form method="post" th:action="@{/user}">
+
         <div>
             <label>Name:</label>
-            <input type="text" name="userName" >
+            <input type="text" name="userName" th:value = "${user.userName}">
         </div>
 
         <div>
             <label>Email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" th:value = "${user.email}">
         </div>
 
         <div>
